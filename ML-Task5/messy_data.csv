@@ -1,0 +1,16 @@
+customer_id,name,age,email,gender,salary,join_date,city
+1,alice,25,alice@gmail.com,Female,50000,2021-01-15,new york
+2,BOB,30,BOB@GMAIL.COM,MALE,60000,2020-05-22,LOS ANGELES
+3,Charlie,22,charlie@gmail.com,male,45000,2019-11-30,chicago
+4,DIANA,45,diana@gmail.com,Female,80000,2022-03-10,HOUSTON
+5,eve,200,EVE@GMAIL.COM,female,55000,2021-07-18,Phoenix
+6,Frank,35,frank@gmail.com,Male,70000,2020-12-01,philadelphia
+7,GRACE,28,grace@gmail.com,FEMALE,48000,2021-04-25,SAN ANTONIO
+8,henry,-5,,Male,seventy,2023-06-14,San Diego
+9,IVY,40,ivy@gmail.com,female,90000,2022-09-09,dallas
+10,jack,33,jack@gmail.com,MALE,62000,2020-08-30,SAN JOSE
+3,Charlie,22,charlie@gmail.com,male,45000,2019-11-30,chicago
+5,eve,200,EVE@GMAIL.COM,female,55000,2021-07-18,Phoenix
+11,Karen,29,karen@gmail.com,Female,53000,2023/01/10,NEW YORK
+12,,31,liam@gmail.com,Male,,15-04-2022,los angeles
+13,MIKE,999,,MALE,1000000,2021-02-28,CHICAGO

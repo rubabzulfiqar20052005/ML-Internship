@@ -1,0 +1,46 @@
+
+╔══════════════════════════════════════════════════════╗
+║       FULL EDA REPORT — TITANIC (Kaggle)          ║
+║              INSIGHTS SUMMARY                        ║
+╚══════════════════════════════════════════════════════╝
+
+ Q1 — SHAPE & FEATURE TYPES
+   • Dataset: 891 rows × 12 columns
+   • Numeric   : PassengerId, Survived, Pclass,
+                 Age, SibSp, Parch, Fare
+   • Categorical: Name, Sex, Ticket, Cabin, Embarked
+   • 'Age'   has ~20% missing values (177 nulls)
+   • 'Cabin' has ~77% missing — mostly unusable
+   • 'Embarked' has only 2 missing values
+
+ Q2 — TARGET DISTRIBUTION
+   • 549 passengers (61.6%) did NOT survive
+   • 342 passengers (38.4%) survived
+   • Mild class imbalance present
+
+ Q3 — FEATURE CORRELATION WITH TARGET
+   • 'Fare'   : Positive correlation (+0.26)
+                Higher fare = better survival
+   • 'Pclass' : Negative correlation (-0.34)
+                3rd class passengers survived less
+   • 'Age'    : Slight negative (-0.07)
+   • 'SibSp'  : Very weak correlation (-0.04)
+
+ Q4 — OUTLIERS
+   • 'Fare'  : Significant outliers (some > 500)
+   • 'SibSp' : Few high outliers (family > 4)
+   • 'Parch' : Minor outliers detected
+   • 'Age'   : Mild outliers at higher end (80+)
+
+  Q5 — CLASS IMBALANCE
+   • Target  : 61.6% vs 38.4% — mild imbalance
+   • Sex     : 65% Male vs 35% Female
+   • Pclass  : Class 3 (55%) dominates
+   • Embarked: Southampton (72%) dominates
+
+ KEY RECOMMENDATIONS FOR MODELLING
+   → Impute 'Age' using median imputation
+   → Drop 'Cabin' — too many missing values
+   → Cap 'Fare' outliers before training
+   → Encode 'Sex' and 'Embarked' (Label/OneHot)
+   → Use class_weight='balanced' for imbalance
